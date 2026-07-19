@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PDF Studio">
+  <!-- Riproduzione fedele di assets/app.ico (scripts/make_icon.py) -->
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#1D1F24"/>
+  <!-- pagina con angolo piegato -->
+  <polygon points="16,10 38,10 48,20 48,54 16,54" fill="#F5F6F8"/>
+  <polygon points="38,10 38,20 48,20" fill="#D0D3D9"/>
+  <!-- righe di testo -->
+  <g fill="#AAAFB7">
+    <rect x="20" y="18"   width="20" height="2" rx="1"/>
+    <rect x="20" y="23.4" width="24" height="2" rx="1"/>
+    <rect x="20" y="28.8" width="16" height="2" rx="1"/>
+  </g>
+  <!-- banda rossa PDF -->
+  <rect x="10" y="36" width="34" height="12" rx="3" fill="#E5484D"/>
+  <path d="M13 45.5 h28 a1.2 1.2 0 0 1 1.2 1.2 V46.8 a1.2 1.2 0 0 1 -1.2 1.2 H11.8 a1.2 1.2 0 0 1 -1.2 -1.2 V46.7 a1.2 1.2 0 0 1 1.2 -1.2 Z" fill="#C43136"/>
+  <text x="27" y="42.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9.5" fill="#fff">PDF</text>
+  <!-- spunta verde -->
+  <circle cx="48" cy="48" r="10" fill="#2EA043"/>
+  <path d="M43.5 48.2 L46.8 51.6 L53 44.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
