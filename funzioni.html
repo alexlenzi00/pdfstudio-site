@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Funzioni — PDF Studio</title>
 <meta name="description" content="Tutte le funzioni di PDF Studio: firma digitale PAdES, OCR, modifica testo, moduli AcroForm, confronto documenti, organizzazione pagine, protezione AES-256, compressione.">
+<link rel="canonical" href="https://alexlenzi00.github.io/pdfstudio-site/funzioni.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDF Studio">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Tutte le funzioni — PDF Studio">
+<meta property="og:description" content="Firma PAdES, OCR, moduli AcroForm, modifica del testo, organizzazione pagine, filigrana, Bates, confronto, password AES-256: tutto in locale.">
+<meta property="og:url" content="https://alexlenzi00.github.io/pdfstudio-site/funzioni.html">
+<meta property="og:image" content="https://alexlenzi00.github.io/pdfstudio-site/assets/img/zoom-dettaglio.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tutte le funzioni — PDF Studio">
+<meta name="twitter:description" content="Firma PAdES, OCR, moduli AcroForm, modifica del testo, organizzazione pagine, filigrana, Bates, confronto, password AES-256: tutto in locale.">
+<meta name="twitter:image" content="https://alexlenzi00.github.io/pdfstudio-site/assets/img/zoom-dettaglio.png">
 <link rel="icon" href="assets/icon.svg">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -42,7 +54,7 @@
       <h2 class="sec-title">Firma digitale con valore legale</h2>
       <div class="grid">
         <div class="card"><div class="ic ic--sign"></div><h3>Firma PAdES</h3>
-          <p>Apponi una firma crittografica conforme PAdES con la tua identità PKCS#12 (kit firma, SPID/CNS o certificato aziendale). Firma invisibile o riquadro visibile sulla pagina.</p></div>
+          <p>Apponi una firma crittografica conforme PAdES con la tua identità PKCS#12 (kit firma, CNS o certificato aziendale, che devi già avere). Firma invisibile o con riquadro visibile sulla pagina.</p></div>
         <div class="card"><div class="ic ic--verify"></div><h3>Verifica delle firme</h3>
           <p>Controlla chi ha firmato un documento e se è stato modificato dopo la firma. L'integrità viene segnalata chiaramente.</p></div>
         <div class="card"><div class="ic ic--edit"></div><h3>Firma grafica</h3>
@@ -53,15 +65,25 @@
 
   <section class="section">
     <div class="wrap">
+      <figure class="shot">
+        <img src="assets/img/modifica-testo.png" width="1320" height="820" loading="lazy"
+             alt="Modifica del testo in corso su un preventivo: il campo di scrittura compare sopra la riga cliccata.">
+        <figcaption>Modifica del testo: il campo compare <b>sopra</b> la riga che hai cliccato, con lo stesso font e la stessa posizione.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
       <p class="sec-label">Testo e moduli</p>
       <h2 class="sec-title">Modifica e compila come su carta</h2>
       <div class="grid">
         <div class="card"><div class="ic ic--edit"></div><h3>Modifica del testo esistente</h3>
-          <p>Correggi parole e righe direttamente nel PDF, mantenendo l'impaginazione. Il testo vicino resta intatto.</p></div>
+          <p>Correggi parole e righe direttamente nel PDF, mantenendo l'impaginazione: il campo compare esattamente sopra il testo che hai cliccato e le righe vicine restano gli oggetti originali del documento. Lavora su riga e paragrafo, non ri-impagina il capitolo.</p></div>
         <div class="card"><div class="ic ic--form"></div><h3>Moduli AcroForm</h3>
           <p>Riconosce i campi interattivi (testo, caselle, menu) e li compila: il file resta un modulo standard, riapribile ovunque.</p></div>
         <div class="card"><div class="ic ic--scan"></div><h3>OCR delle scansioni</h3>
-          <p>Aggiunge un livello di testo invisibile ai PDF scansionati: diventano cercabili e selezionabili, senza alterare l'immagine.</p></div>
+          <p>Aggiunge un livello di testo invisibile ai PDF scansionati: diventano cercabili e selezionabili, senza alterare l'immagine. Richiede Tesseract (gratuito, un comando).</p></div>
         <div class="card"><div class="ic ic--check"></div><h3>Caselle, spunte, evidenziatore</h3>
           <p>Testo a caselle (codice fiscale, IBAN), spunte, croci, evidenziatore e penna a mano libera per compilare qualsiasi modulo.</p></div>
       </div>
@@ -117,7 +139,12 @@
         <a href="note-di-rilascio.html">Note di rilascio</a></nav></div>
       <div class="col"><h4>Assistenza</h4><nav>
         <a href="mailto:lenzialex00@gmail.com">Contatti</a>
-        <a href="prezzi.html#faq">Domande frequenti</a></nav></div>
+        <a href="prezzi.html#faq">Domande frequenti</a>
+        <a href="requisiti.html">Requisiti di sistema</a></nav></div>
+      <div class="col"><h4>Legale</h4><nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="termini.html">Termini e recesso</a>
+        <a href="termini.html#licenza">Licenza d'uso</a></nav></div>
     </div>
     <div class="legal"><span>© 2026 PDF Studio</span><span>Tutto locale · Nessun tracciamento</span></div>
   </div>
