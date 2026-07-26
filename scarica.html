@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scarica PDF Studio — PDF Studio</title>
+<meta name="description" content="Scarica PDF Studio per Windows 10/11 o per Linux. Prova di 7 giorni con tutte le funzioni, nessun account.">
+<link rel="canonical" href="https://alexlenzi00.github.io/pdfstudio-site/scarica.html">
+<link rel="icon" href="assets/icon.svg">
+<link rel="stylesheet" href="assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDF Studio">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Scarica PDF Studio — PDF Studio">
+<meta property="og:description" content="Scarica PDF Studio per Windows 10/11 o per Linux. Prova di 7 giorni con tutte le funzioni, nessun account.">
+<meta property="og:url" content="https://alexlenzi00.github.io/pdfstudio-site/scarica.html">
+<meta property="og:image" content="https://alexlenzi00.github.io/pdfstudio-site/assets/img/vista-editor.png">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html"><img src="assets/icon.svg" alt=""> PDF Studio</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="funzioni.html">Funzioni</a>
+      <a href="scarica.html" aria-current="page">Scarica</a>
+      <a href="prezzi.html">Prezzo</a>
+      <a href="note-di-rilascio.html">Novità</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary btn-sm cta-nav" href="#acquista">Acquista</a>
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Cambia tema" title="Cambia tema">◐</button>
+      <button class="icon-btn nav-toggle" data-nav-toggle type="button" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top:56px">
+    <div class="wrap">
+      <p class="eyebrow">Scarica</p>
+      <h1 class="sec-title" style="font-size:clamp(2rem,5vw,3rem)">Scegli il tuo sistema.</h1>
+      <p class="sec-sub">Versione 1.0.1. La prova dura 7 giorni con tutte le funzioni: gli export
+         riportano una filigrana finch&eacute; non attivi la licenza. Nessun account, nessuna
+         registrazione: si scarica e si usa.</p>
+
+      <div class="dl-grid">
+        <div class="dl-card">
+          <div class="dl-os">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M3 5.6 10.2 4.6v6.7H3V5.6zm0 12.8 7.2 1v-6.6H3v5.6zM11.4 4.4 21 3v8.3h-9.6V4.4zm0 15.2L21 21v-8.2h-9.6v6.8z"/></svg>
+            <div><h3>Windows 10 e 11</h3><p class="price-note">64 bit &middot; ~42 MB</p></div>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/PDFStudio.zip">Scarica per Windows</a>
+          <ol class="dl-steps">
+            <li>Estrai la cartella <code>PDFStudio</code> dove preferisci
+                (per esempio in <code>Documenti</code>).</li>
+            <li>Avvia <code>PDFStudio.exe</code>.</li>
+            <li>Al primo avvio Windows mostra <b>&laquo;PC protetto da SmartScreen&raquo;</b>:
+                &egrave; normale per un programma non ancora firmato.
+                Clicca <b>Ulteriori informazioni</b> &rarr; <b>Esegui comunque</b>.</li>
+          </ol>
+          <p class="price-note">Non serve installare Python n&eacute; altro. Gli aggiornamenti
+             arrivano da soli.</p>
+        </div>
+
+        <div class="dl-card">
+          <div class="dl-os">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2c2 0 3.2 1.6 3.2 3.6 0 1.3-.4 2-.4 3 0 1.2 1.3 2.2 2.3 4.2.9 1.8 1.2 3 2 4 .7.9.3 2-1 2.2-1.2.2-2-.5-2.6-.2-.7.4-1.7 1.2-3.5 1.2s-2.8-.8-3.5-1.2c-.6-.3-1.4.4-2.6.2-1.3-.2-1.7-1.3-1-2.2.8-1 1.1-2.2 2-4C8.9 10.8 10.2 9.8 10.2 8.6c0-1-.4-1.7-.4-3C9.8 3.6 10 2 12 2z"/></svg>
+            <div><h3>Linux</h3><p class="price-note">x86-64 &middot; ~72 MB</p></div>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/PDFStudio-linux.tar.gz">Scarica per Linux</a>
+          <ol class="dl-steps">
+            <li>Estrai l'archivio:<br>
+                <code>tar -xzf PDFStudio-linux.tar.gz</code></li>
+            <li>Avvia:<br><code>./PDFStudio/PDFStudio</code></li>
+            <li>Se Qt lamenta librerie mancanti, su Debian/Ubuntu:<br>
+                <code>sudo apt install libxcb-cursor0 libxcb-icccm4 libxcb-keysyms1 libxkbcommon-x11-0</code></li>
+          </ol>
+          <p class="price-note">Provato su Ubuntu 22.04 e derivate (glibc 2.31+).
+             Su Linux l'aggiornamento va sostituito a mano: il programma ti avvisa.</p>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:30px">
+        <b>Preferisci comprare subito?</b> La licenza si attiva nel programma gi&agrave;
+        scaricato, senza reinstallare nulla &mdash; <a href="prezzi.html">vedi il prezzo</a>.
+      </div>
+
+      <h2 class="sec-title" style="font-size:1.4rem; margin-top:44px">Prima di scaricare</h2>
+      <ul class="dl-steps" style="max-width:760px">
+        <li>Per l'<b>OCR</b> serve Tesseract, gratuito, da installare a parte:
+            <a href="requisiti.html#ocr">come si fa</a>.</li>
+        <li>Per <b>firmare</b> serve la tua identit&agrave; digitale (.p12/.pfx): PDF Studio
+            non emette certificati.</li>
+        <li>Tutti i requisiti e i <b>limiti dichiarati</b>:
+            <a href="requisiti.html">requisiti di sistema</a>.</li>
+      </ul>
+
+      <p class="price-note" style="margin-top:26px">Tutte le versioni pubblicate:
+        <a href="https://github.com/alexlenzi00/pdfstudio-site/releases">archivio dei rilasci</a>
+        &middot; <a href="note-di-rilascio.html">che cosa cambia</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="col" style="max-width:280px">
+        <a class="brand" href="index.html"><img src="assets/icon.svg" alt=""> PDF Studio</a>
+        <p class="price-note" style="margin-top:12px">Editor PDF locale per Windows e Linux. Fatto in Italia.</p>
+      </div>
+      <div class="col"><h4>Prodotto</h4><nav>
+        <a href="funzioni.html">Funzioni</a><a href="scarica.html">Scarica</a><a href="prezzi.html">Prezzo e prova</a>
+        <a href="note-di-rilascio.html">Note di rilascio</a></nav></div>
+      <div class="col"><h4>Assistenza</h4><nav>
+        <a href="mailto:lenzialex00@gmail.com">Contatti</a>
+        <a href="prezzi.html#faq">Domande frequenti</a>
+        <a href="requisiti.html">Requisiti di sistema</a></nav></div>
+      <div class="col"><h4>Legale</h4><nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="termini.html">Termini e recesso</a>
+        <a href="termini.html#licenza">Licenza d'uso</a></nav></div>
+    </div>
+    <div class="legal"><span>© 2026 PDF Studio</span><span>Tutto locale · Nessun tracciamento</span></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
