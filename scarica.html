@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Scarica PDF Studio — PDF Studio</title>
-<meta name="description" content="Scarica PDF Studio per Windows 10/11 o per Linux. Prova di 7 giorni con tutte le funzioni, nessun account.">
+<meta name="description" content="Scarica PDF Studio per Windows 10/11 (installer o versione portatile) o per Linux. Prova di 7 giorni con tutte le funzioni, nessun account.">
 <link rel="canonical" href="https://alexlenzi00.github.io/pdfstudio-site/scarica.html">
 <link rel="icon" href="assets/icon.svg">
 <link rel="stylesheet" href="assets/site.css">
@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="PDF Studio">
 <meta property="og:locale" content="it_IT">
 <meta property="og:title" content="Scarica PDF Studio — PDF Studio">
-<meta property="og:description" content="Scarica PDF Studio per Windows 10/11 o per Linux. Prova di 7 giorni con tutte le funzioni, nessun account.">
+<meta property="og:description" content="Scarica PDF Studio per Windows 10/11 (installer o versione portatile) o per Linux. Prova di 7 giorni con tutte le funzioni, nessun account.">
 <meta property="og:url" content="https://alexlenzi00.github.io/pdfstudio-site/scarica.html">
 <meta property="og:image" content="https://alexlenzi00.github.io/pdfstudio-site/assets/img/vista-editor.png">
 </head>
@@ -29,7 +29,7 @@
       <a href="note-di-rilascio.html">Novità</a>
     </nav>
     <div class="nav-right">
-      <a class="btn btn-primary btn-sm cta-nav" href="#acquista">Acquista</a>
+      <a class="btn btn-primary btn-sm cta-nav" href="prezzi.html">Acquista</a>
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Cambia tema" title="Cambia tema">◐</button>
       <button class="icon-btn nav-toggle" data-nav-toggle type="button" aria-label="Menu">☰</button>
     </div>
@@ -41,33 +41,37 @@
     <div class="wrap">
       <p class="eyebrow">Scarica</p>
       <h1 class="sec-title" style="font-size:clamp(2rem,5vw,3rem)">Scegli il tuo sistema.</h1>
-      <p class="sec-sub">Versione 1.0.1. La prova dura 7 giorni con tutte le funzioni: gli export
-         riportano una filigrana finch&eacute; non attivi la licenza. Nessun account, nessuna
-         registrazione: si scarica e si usa.</p>
+      <p class="sec-sub">Versione 1.0.1. La prova dura 7 giorni con tutte le funzioni: gli
+         export riportano una filigrana finch&eacute; non attivi la licenza. Nessun account,
+         nessuna registrazione: si scarica e si usa.</p>
 
       <div class="dl-grid">
         <div class="dl-card">
           <div class="dl-os">
             <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M3 5.6 10.2 4.6v6.7H3V5.6zm0 12.8 7.2 1v-6.6H3v5.6zM11.4 4.4 21 3v8.3h-9.6V4.4zm0 15.2L21 21v-8.2h-9.6v6.8z"/></svg>
-            <div><h3>Windows 10 e 11</h3><p class="price-note">64 bit &middot; ~42 MB</p></div>
+            <div><h3>Windows 10 e 11</h3>
+              <p class="price-note">64 bit &middot; installer, ~33 MB</p></div>
           </div>
-          <a class="btn btn-primary" href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/PDFStudio.zip">Scarica per Windows</a>
+          <a class="btn btn-primary" href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/PDFStudio-Setup-1.0.1.exe">Scarica l'installer</a>
           <ol class="dl-steps">
-            <li>Estrai la cartella <code>PDFStudio</code> dove preferisci
-                (per esempio in <code>Documenti</code>).</li>
-            <li>Avvia <code>PDFStudio.exe</code>.</li>
-            <li>Al primo avvio Windows mostra <b>&laquo;PC protetto da SmartScreen&raquo;</b>:
-                &egrave; normale per un programma non ancora firmato.
-                Clicca <b>Ulteriori informazioni</b> &rarr; <b>Esegui comunque</b>.</li>
+            <li>Avvia <code>PDFStudio-Setup-1.0.1.exe</code> e segui le tre schermate.
+                Non serve l'amministratore: installa solo per il tuo utente.</li>
+            <li>Trovi PDF Studio nel menu Start (e sul Desktop, se lo scegli).</li>
+            <li>Al primo avvio compare l'avviso di Windows:
+                <a href="#smartscreen">ecco perch&eacute; e cosa fare</a>.</li>
           </ol>
-          <p class="price-note">Non serve installare Python n&eacute; altro. Gli aggiornamenti
-             arrivano da soli.</p>
+          <p class="price-note">Aggiunge la disinstallazione e l'associazione dei progetti
+             <code>.pstudio</code>. Gli aggiornamenti poi arrivano da soli.</p>
+          <p class="price-note">Preferisci non installare nulla?
+             <a href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/PDFStudio.zip">Versione portatile in ZIP</a>
+             (~42 MB): estrai e avvia <code>PDFStudio.exe</code>.</p>
         </div>
 
         <div class="dl-card">
           <div class="dl-os">
             <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2c2 0 3.2 1.6 3.2 3.6 0 1.3-.4 2-.4 3 0 1.2 1.3 2.2 2.3 4.2.9 1.8 1.2 3 2 4 .7.9.3 2-1 2.2-1.2.2-2-.5-2.6-.2-.7.4-1.7 1.2-3.5 1.2s-2.8-.8-3.5-1.2c-.6-.3-1.4.4-2.6.2-1.3-.2-1.7-1.3-1-2.2.8-1 1.1-2.2 2-4C8.9 10.8 10.2 9.8 10.2 8.6c0-1-.4-1.7-.4-3C9.8 3.6 10 2 12 2z"/></svg>
-            <div><h3>Linux</h3><p class="price-note">x86-64 &middot; ~72 MB</p></div>
+            <div><h3>Linux</h3>
+              <p class="price-note">x86-64 &middot; ~72 MB</p></div>
           </div>
           <a class="btn btn-primary" href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/PDFStudio-linux.tar.gz">Scarica per Linux</a>
           <ol class="dl-steps">
@@ -77,8 +81,9 @@
             <li>Se Qt lamenta librerie mancanti, su Debian/Ubuntu:<br>
                 <code>sudo apt install libxcb-cursor0 libxcb-icccm4 libxcb-keysyms1 libxkbcommon-x11-0</code></li>
           </ol>
-          <p class="price-note">Provato su Ubuntu 22.04 e derivate (glibc 2.31+).
-             Su Linux l'aggiornamento va sostituito a mano: il programma ti avvisa.</p>
+          <p class="price-note">Provato su Ubuntu 22.04 e derivate (glibc 2.31+). Su Linux
+             l'aggiornamento viene scaricato e il programma ti dice dove trovarlo: la
+             sostituzione &egrave; manuale.</p>
         </div>
       </div>
 
@@ -86,8 +91,46 @@
         <b>Preferisci comprare subito?</b> La licenza si attiva nel programma gi&agrave;
         scaricato, senza reinstallare nulla &mdash; <a href="prezzi.html">vedi il prezzo</a>.
       </div>
+    </div>
+  </section>
 
-      <h2 class="sec-title" style="font-size:1.4rem; margin-top:44px">Prima di scaricare</h2>
+  <section class="section" id="smartscreen">
+    <div class="wrap legalpage">
+      <p class="sec-label">Il primo avvio</p>
+      <h2 class="sec-title" style="font-size:1.6rem">&laquo;PC protetto da SmartScreen&raquo;:
+         perch&eacute; compare e cosa significa</h2>
+      <p>Al primo avvio Windows mostra una schermata blu con scritto che ha protetto il tuo
+         PC. <b>Non vuol dire che il programma contenga qualcosa di male</b>: vuol dire che il
+         file &egrave; nuovo e non ha ancora una <i>reputazione</i> presso Microsoft. Succede a
+         qualsiasi programma non firmato con un certificato commerciale, anche a quelli
+         perfettamente onesti.</p>
+      <p>Per procedere: <b>Ulteriori informazioni</b> &rarr; <b>Esegui comunque</b>.</p>
+
+      <h3>Come puoi verificare tu stesso che il file &egrave; quello giusto</h3>
+      <p>Pubblichiamo l'impronta SHA-256 di ogni pacchetto: se coincide, il file che hai
+         scaricato &egrave; esattamente quello che abbiamo pubblicato noi (nessuna modifica
+         per strada). Su Windows, in PowerShell:</p>
+      <p><code>Get-FileHash .\PDFStudio-Setup-1.0.1.exe -Algorithm SHA256</code></p>
+      <p>su Linux: <code>sha256sum PDFStudio-linux.tar.gz</code></p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>File</th><th>SHA-256</th></tr></thead>
+          <tbody>
+            <tr><td>PDFStudio-Setup-1.0.1.exe</td><td class="num" style="font-size:.72rem">0cd1980baec9097f147916310660055aba0405b61fdfd1084796e13f0d2db14f</td></tr>
+            <tr><td>PDFStudio.zip</td><td class="num" style="font-size:.72rem">3122b76a36e7e40d3fc8c345bd1f07aedeacd7e6bb7179e0b53340a67e929ee1</td></tr>
+            <tr><td>PDFStudio-linux.tar.gz</td><td class="num" style="font-size:.72rem">43502a1427572e2db79f24bbb676086522b71943fdad51a326f203ba96ad11dc</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">Le stesse impronte sono in
+         <a href="https://github.com/alexlenzi00/pdfstudio-site/releases/latest/download/SHA256SUMS.txt">SHA256SUMS.txt</a> allegato alla release.</p>
+
+      <h3>E l'avviso sparir&agrave;?</h3>
+      <p>S&igrave;. Stiamo portando PDF Studio sul <b>Microsoft Store</b>: da l&igrave; il
+         pacchetto viene firmato da Microsoft e l'avviso non compare pi&ugrave;. Nel frattempo
+         il programma &egrave; identico &mdash; cambia solo il canale da cui lo prendi.</p>
+
+      <h2 class="sec-title" style="font-size:1.4rem; margin-top:40px">Prima di scaricare</h2>
       <ul class="dl-steps" style="max-width:760px">
         <li>Per l'<b>OCR</b> serve Tesseract, gratuito, da installare a parte:
             <a href="requisiti.html#ocr">come si fa</a>.</li>
@@ -96,7 +139,6 @@
         <li>Tutti i requisiti e i <b>limiti dichiarati</b>:
             <a href="requisiti.html">requisiti di sistema</a>.</li>
       </ul>
-
       <p class="price-note" style="margin-top:26px">Tutte le versioni pubblicate:
         <a href="https://github.com/alexlenzi00/pdfstudio-site/releases">archivio dei rilasci</a>
         &middot; <a href="note-di-rilascio.html">che cosa cambia</a></p>
