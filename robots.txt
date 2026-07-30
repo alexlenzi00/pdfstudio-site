@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alexlenzi00.github.io/pdfstudio-site/sitemap.xml
+Sitemap: https://alexlenzi00.github.io/pennino-site/sitemap.xml

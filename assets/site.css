@@ -1,4 +1,4 @@
-/* PDF Studio — stile del sito (condiviso da tutte le pagine).
+/* Pennino — stile del sito (condiviso da tutte le pagine).
    Palette derivata dall'icona reale dell'app: fondo scuro #1D1F24,
    banda rossa #E5484D, spunta verde #2EA043. Nessuna dipendenza esterna:
    font di sistema, coerente con "tutto in locale". Due temi. */
@@ -212,7 +212,7 @@ footer.site .legal { margin-top: 34px; color: var(--ink-soft); font-size: .86rem
 }
 
 /* --------------------------------------------------- schermate dell'app
-   Immagini vere della finestra di PDF Studio (generate da
+   Immagini vere della finestra di Pennino (generate da
    scripts/make_screenshots.py). Cornice sobria, angoli tondi e ombra:
    la schermata deve sembrare una finestra, non un banner. */
 .shot { margin: 0; }
