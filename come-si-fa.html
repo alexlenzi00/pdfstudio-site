@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come si fa — Guida a Pennino</title>
+<meta name="description" content="Guida pratica a Pennino: come modificare il testo di un PDF, compilare e firmare moduli, organizzare le pagine, fare l'OCR, proteggere e comprimere. Con le schermate del programma.">
+<link rel="canonical" href="https://alexlenzi00.github.io/pennino-site/come-si-fa.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pennino">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Come si fa — Guida a Pennino">
+<meta property="og:description" content="Ogni funzione spiegata in pochi passi, con le schermate del programma.">
+<meta property="og:url" content="https://alexlenzi00.github.io/pennino-site/come-si-fa.html">
+<meta property="og:image" content="https://alexlenzi00.github.io/pennino-site/assets/img/howto/05-caselle-griglia.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Come si fa — Guida a Pennino">
+<meta name="twitter:description" content="Ogni funzione spiegata in pochi passi, con le schermate del programma.">
+<meta name="twitter:image" content="https://alexlenzi00.github.io/pennino-site/assets/img/howto/05-caselle-griglia.png">
+<link rel="icon" href="assets/icon.svg">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html"><img src="assets/icon.svg" alt=""> Pennino</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="funzioni.html">Funzioni</a>
+      <a href="come-si-fa.html" aria-current="page">Come si fa</a>
+      <a href="scarica.html">Scarica</a>
+      <a href="prezzi.html">Prezzo</a>
+      <a href="note-di-rilascio.html">Novità</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary btn-sm cta-nav" href="prezzi.html">Acquista</a>
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Cambia tema" title="Cambia tema">◐</button>
+      <button class="icon-btn nav-toggle" data-nav-toggle type="button" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top:56px">
+    <div class="wrap">
+      <p class="eyebrow">Guida</p>
+      <h1 class="sec-title" style="font-size:clamp(2rem,5vw,3rem)">Come si fa</h1>
+      <p class="sec-sub">Ogni funzione in pochi passi, con le schermate prese dal programma vero. Se una cosa non ti torna, cerca la voce qui sotto: c'è il percorso esatto del menu da seguire.</p>
+
+      <div class="note" style="margin-top:26px">
+        <b>Due viste, una sola idea.</b> <b>Organizza pagine</b> (Ctrl+1) è dove
+        muovi, ruoti ed elimini pagine intere. <b>Modifica e compila</b> (Ctrl+2)
+        è dove scrivi <i>dentro</i> la pagina. Quasi tutti i dubbi nascono
+        dall'essere nella vista sbagliata.
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:14px">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.5rem">Indice</h2>
+      <ul class="lead" style="columns:2;column-gap:40px;line-height:2">
+        <li><a href="#aprire">Aprire un PDF</a></li>
+        <li><a href="#pagine">Organizzare le pagine</a></li>
+        <li><a href="#modifica-testo">Modificare il testo esistente</a></li>
+        <li><a href="#testo-nuovo">Aggiungere testo nuovo</a></li>
+        <li><a href="#griglia">Codice fiscale e IBAN nelle caselle</a></li>
+        <li><a href="#spunte">Spunte, croci e pallini</a></li>
+        <li><a href="#evidenzia">Evidenziare</a></li>
+        <li><a href="#penna">Penna e firma a mano</a></li>
+        <li><a href="#cerca">Cercare nel documento</a></li>
+        <li><a href="#zoom">Ingrandire</a></li>
+        <li><a href="#moduli">Compilare un modulo AcroForm</a></li>
+        <li><a href="#firma-digitale">Firma digitale con valore legale</a></li>
+        <li><a href="#ocr">Rendere cercabile una scansione</a></li>
+        <li><a href="#confronto">Confrontare due PDF</a></li>
+        <li><a href="#timbri">Numeri, filigrana, intestazioni, Bates</a></li>
+        <li><a href="#protezione">Password e compressione</a></li>
+        <li><a href="#salvare">Salvare o esportare?</a></li>
+        <li><a href="#licenza">Attivare la licenza</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="aprire">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Aprire un PDF</h2>
+      <ol class="lead">
+        <li><b>File → Apri…</b> (o <b>Ctrl+O</b>), oppure trascina il PDF dentro la finestra.</li>
+        <li>Ti ritrovi nella vista <b>Modifica e compila</b>: qui si scrive sulla pagina.</li>
+        <li>Passi all'altra vista con i pulsanti <b>Pagine</b> e <b>Compila</b> della barra, o con <b>Ctrl+1</b> e <b>Ctrl+2</b>.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/02-vista-compila.png" width="1280" height="800" loading="lazy"
+             alt="La vista Modifica e compila con un modulo di iscrizione aperto e la barra degli strumenti in alto.">
+        <figcaption>La vista <b>Modifica e compila</b>. La fila di strumenti in alto è quella che userai per tutto il resto della guida.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="pagine">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Organizzare le pagine</h2>
+      <ol class="lead">
+        <li>Vai su <b>Pagine</b> (<b>Ctrl+1</b>): vedi le miniature di tutto il documento.</li>
+        <li><b>Riordinare</b>: trascina una miniatura dove vuoi. Per spostarne tante, selezionale (Ctrl+clic) e usa <b>Pagine → Sposta pagine su / giù / all'inizio / alla fine</b>.</li>
+        <li><b>Ruotare</b>: <b>Pagine → Ruota a sinistra</b> o <b>Ruota a destra</b>.</li>
+        <li><b>Eliminare</b>: seleziona e <b>Pagine → Elimina pagine</b>.</li>
+        <li><b>Unire un altro PDF</b>: <b>Pagine → Unisci PDF…</b></li>
+        <li><b>Inserire un'immagine</b> come nuova pagina: <b>Pagine → Inserisci immagine…</b></li>
+        <li><b>Estrarre</b> alcune pagine in un file a parte: <b>Pagine → Estrai pagine…</b></li>
+        <li><b>Dividere</b> il documento in più file: <b>Pagine → Dividi documento…</b></li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/01-organizza-pagine.png" width="1280" height="800" loading="lazy"
+             alt="La vista Organizza pagine con le miniature delle quattro pagine del documento.">
+        <figcaption>La vista <b>Organizza pagine</b>: si trascina come si farebbe con le diapositive.</figcaption>
+      </figure>
+      <div class="note">
+        <b>Sbagliato?</b> <b>Ctrl+Z</b> annulla. Pagine e contenuti hanno due
+        cronologie separate: annullare nella vista Pagine non tocca quello che
+        hai scritto nella vista Compila, e viceversa.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="modifica-testo">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Modificare il testo che è già nel PDF</h2>
+      <ol class="lead">
+        <li>Vista <b>Compila</b> (Ctrl+2).</li>
+        <li>Scegli lo strumento <b>Mod. testo</b> nella barra.</li>
+        <li><b>Clicca sul testo</b> che vuoi cambiare: si apre un campo di scrittura esattamente sopra la riga, con lo stesso carattere e lo stesso corpo.</li>
+        <li>Scrivi. <b>Ctrl+Invio</b> conferma, <b>Esc</b> annulla, e un clic fuori conferma.</li>
+        <li><b>Ctrl+B</b> e <b>Ctrl+I</b> mettono grassetto e corsivo mentre stai scrivendo.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/03-modifica-testo.png" width="1280" height="800" loading="lazy"
+             alt="Lo strumento Mod. testo è attivo e la barra di stato in basso spiega i comandi della modifica.">
+        <figcaption>Il campo di scrittura si sovrappone <b>al millimetro</b> al testo originale — per questo la pagina sembra intatta. Che sei in modifica lo dice la barra di stato in basso.</figcaption>
+      </figure>
+      <div class="note">
+        <b>Limiti, detti chiaramente.</b> La riscrittura lavora per riga e per
+        blocco: la reimpaginazione di un <i>intero paragrafo</i> non c'è ancora.
+        Il testo <b>ruotato</b> non è modificabile.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="testo-nuovo">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Aggiungere testo dove non c'è</h2>
+      <ol class="lead">
+        <li>Strumento <b>Testo</b>.</li>
+        <li>Clicca nel punto della pagina dove vuoi scrivere.</li>
+        <li>Digita. Carattere, corpo e colore si scelgono nei campi a destra della barra <i>prima</i> o dopo aver scritto.</li>
+        <li>Con lo strumento <b>Seleziona</b> puoi poi spostare la casella o ridimensionarla dagli angoli.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/04-casella-testo.png" width="1280" height="800" loading="lazy"
+             alt="Una casella di testo con scritto Rossi Maria sulla riga Cognome e nome del modulo.">
+        <figcaption>Una casella di testo appoggiata sulla riga vuota del modulo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="griglia">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Codice fiscale, IBAN e moduli a caselle</h2>
+      <p class="lead">È il caso classico dei moduli della pubblica amministrazione: una lettera per casella, e allinearle a mano è un incubo.</p>
+      <ol class="lead">
+        <li>Strumento <b>Caselle</b>.</li>
+        <li>Clicca all'inizio della fila di caselle.</li>
+        <li>Scrivi normalmente: ogni carattere finisce nella sua casella.</li>
+        <li>Se il passo non coincide con quello del modulo, regolalo con <b>Passo</b> nella barra, oppure trascina l'angolo della casella per adattare larghezza e altezza.</li>
+        <li><b>Invio</b> per terminare.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/05-caselle-griglia.png" width="1280" height="800" loading="lazy"
+             alt="Un codice fiscale scritto nelle caselle a griglia sulla riga Codice fiscale del modulo.">
+        <figcaption>Il codice fiscale entra una lettera per casella, allineato al passo del modulo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="spunte">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Spunte, croci e pallini</h2>
+      <ol class="lead">
+        <li>Strumento <b>Spunta</b> (✓), <b>Croce</b> (✗) o <b>Pallino</b> (●).</li>
+        <li>Clicca dentro la casellina da barrare: il segno si posiziona centrato sul punto cliccato.</li>
+        <li>La dimensione e il colore si regolano nella barra.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/06-spunte.png" width="1280" height="800" loading="lazy"
+             alt="Due spunte e una croce inserite nelle caselline delle dichiarazioni del modulo.">
+        <figcaption>Due spunte e una croce nelle caselline delle dichiarazioni.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="evidenzia">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Evidenziare</h2>
+      <ol class="lead">
+        <li>Strumento <b>Evidenzia</b>.</li>
+        <li>Trascina sopra la riga da evidenziare, come faresti con un evidenziatore vero.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/07-evidenzia.png" width="1280" height="800" loading="lazy"
+             alt="Una riga del modulo evidenziata in giallo.">
+        <figcaption>L'evidenziazione resta sotto al testo, che rimane leggibile.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="penna">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Penna e firma a mano</h2>
+      <ol class="lead">
+        <li>Strumento <b>Penna</b>: disegni a mano libera, con spessore e colore regolabili nella barra. Va bene per firmare al volo, anche col touchpad.</li>
+        <li>Strumento <b>Firma</b>: apre la finestra della firma grafica, dove puoi <b>disegnarla</b>, <b>scriverla a tastiera</b> scegliendo un carattere corsivo, e riusarla.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/08-penna-firma-grafica.png" width="1280" height="800" loading="lazy"
+             alt="Un tratto a mano libera disegnato sulla riga della firma del modulo.">
+        <figcaption>Un tratto a mano libera sulla riga della firma.</figcaption>
+      </figure>
+      <div class="note">
+        <b>Attenzione a non confonderle.</b> Questa è una firma <i>grafica</i>:
+        è un disegno sulla pagina, non ha valore legale. Quella con valore
+        legale è la <a href="#firma-digitale">firma digitale PAdES</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="cerca">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Cercare nel documento</h2>
+      <ol class="lead">
+        <li><b>Ctrl+F</b>, oppure <b>Strumenti → Trova nel documento…</b></li>
+        <li>Scrivi e premi <b>Invio</b>: il contatore mostra a quale risultato sei su quanti.</li>
+        <li>Le frecce ▲▼ passano al precedente e al successivo. <b>Esc</b> chiude.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/09-cerca-testo.png" width="1280" height="800" loading="lazy"
+             alt="La barra di ricerca aperta con la parola iscrizione trovata ed evidenziata nel titolo.">
+        <figcaption>Ricerca in corso: la parola trovata è evidenziata, in alto a destra c'è "1 di 4".</figcaption>
+      </figure>
+      <div class="note">
+        Se la ricerca non trova nulla in un documento <b>scansionato</b>, non è
+        un difetto: quelle pagine sono immagini, non testo. Passa dall'<a href="#ocr">OCR</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="zoom">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Ingrandire</h2>
+      <ol class="lead">
+        <li><b>Ctrl + rotellina</b> del mouse per lo zoom continuo.</li>
+        <li>I pulsanti in basso a destra fanno zoom −, zoom + e <b>adatta alla finestra</b>.</li>
+        <li><b>Ctrl+0</b> torna alla dimensione di partenza.</li>
+      </ol>
+      <figure class="shot" style="margin-top:26px">
+        <img src="assets/img/howto/10-zoom.png" width="1280" height="800" loading="lazy"
+             alt="Il documento ingrandito al 200 per cento, con il testo nitido.">
+        <figcaption>Zoom al 200%: la pagina viene ridisegnata, non ingrandita come immagine, quindi resta nitida.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="moduli">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Compilare un modulo AcroForm</h2>
+      <p class="lead">Alcuni PDF hanno campi <i>interattivi</i> già pronti (li riconosci perché ci clicchi dentro e appare il cursore). Per quelli c'è una finestra dedicata che li elenca tutti.</p>
+      <ol class="lead">
+        <li><b>Strumenti → Compila modulo (AcroForm)…</b></li>
+        <li>Compila i campi nell'elenco e conferma.</li>
+      </ol>
+      <div class="note">
+        Se compare "Questo PDF non contiene un modulo interattivo", il documento
+        non ha campi veri: è un modulo <i>stampato</i>. Usa allora la
+        <a href="#testo-nuovo">casella di testo</a>, le <a href="#griglia">caselle a griglia</a>
+        e le <a href="#spunte">spunte</a>. <b>Pennino compila i moduli esistenti ma non
+        crea campi nuovi</b>: quella funzione è in programma.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="firma-digitale">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Firma digitale con valore legale (PAdES)</h2>
+      <ol class="lead">
+        <li>Collega il dispositivo di firma (kit con smart card o token, SPID, CNS).</li>
+        <li><b>Strumenti → Firma digitale (PAdES)…</b> e segui la finestra.</li>
+        <li>Per controllare un documento firmato da altri: <b>Strumenti → Verifica firme digitali…</b></li>
+      </ol>
+      <div class="note">
+        La verifica non guarda soltanto se i byte firmati sono intatti: controlla
+        anche <b>quanta parte del documento</b> la firma copre. Chi altera un PDF
+        firmato di solito non tocca la parte firmata, ma <i>aggiunge</i> una
+        revisione: senza questo controllo un documento manomesso risulterebbe
+        "intatto".
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="ocr">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Rendere cercabile una scansione (OCR)</h2>
+      <ol class="lead">
+        <li><b>Strumenti → Riconosci testo (OCR)…</b></li>
+        <li>Scegli la lingua (italiano o inglese) e avvia.</li>
+        <li>Finito il riconoscimento, il testo si può <b>cercare e selezionare</b> come in un PDF normale.</li>
+      </ol>
+      <div class="note">
+        L'OCR ha bisogno di <b>Tesseract</b> installato sul computer: è gratuito
+        e la finestra ti dice dove prenderlo se manca. È l'unica funzione con una
+        dipendenza esterna.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="confronto">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Confrontare due PDF</h2>
+      <ol class="lead">
+        <li>Apri la prima versione del documento.</li>
+        <li><b>Strumenti → Confronta con un altro PDF…</b> e scegli la seconda.</li>
+        <li>Le differenze vengono evidenziate: utile per contratti e revisioni di tesi.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="timbri">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Numeri di pagina, filigrana, intestazioni, Bates</h2>
+      <p class="lead">Sono tutte nel menu <b>Strumenti</b> e agiscono su tutto il documento o sull'intervallo di pagine che scegli nella finestra.</p>
+      <ul class="lead">
+        <li><b>Strumenti → Numeri di pagina…</b></li>
+        <li><b>Strumenti → Filigrana…</b> — testo in trasparenza sopra le pagine</li>
+        <li><b>Strumenti → Intestazione e piè di pagina…</b></li>
+        <li><b>Strumenti → Numerazione Bates…</b> — la numerazione progressiva usata in ambito legale</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="protezione">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Password e compressione</h2>
+      <ul class="lead">
+        <li><b>Strumenti → Proteggi con password…</b> — cifratura <b>AES-256</b>.</li>
+        <li><b>Strumenti → Rimuovi password da un PDF…</b> — serve conoscere la password.</li>
+        <li><b>Strumenti → Comprimi PDF…</b> — per rientrare nei limiti di dimensione degli allegati e dei portali.</li>
+      </ul>
+      <div class="note">
+        La password protegge <b>il file</b>, non il tuo computer: se la perdi non
+        la recupera nessuno, nemmeno noi. Non esiste un modo per aggirarla — è il
+        senso della cifratura.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="salvare">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Salvare o esportare? La differenza che conta</h2>
+      <p class="lead">È il malinteso più frequente, e vale la pena chiarirlo una volta per tutte.</p>
+      <ul class="lead">
+        <li><b>Salva progetto</b> (<b>Ctrl+S</b>) → crea un file <code>.pennino</code>.
+            È il <i>tuo lavoro in corso</i>: tutto resta modificabile per sempre e il
+            PDF di partenza non viene mai toccato. Non mandarlo a nessuno: fuori da
+            Pennino non lo apre nulla.</li>
+        <li><b>Esporta PDF…</b> (<b>Ctrl+E</b>) → crea il <b>PDF finito</b>, quello da
+            inviare, caricare o stampare.</li>
+        <li><b>File → Esporta pagine come immagini…</b> → PNG delle pagine.</li>
+        <li><b>File → Stampa…</b> (<b>Ctrl+P</b>).</li>
+      </ul>
+      <div class="note">
+        <b>In prova</b> i PDF esportati escono con una <b>filigrana</b>. Sparisce
+        appena attivi la licenza — e i file esportati prima restano com'erano,
+        quindi riesportali.
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section class="section" id="licenza">
+    <div class="wrap">
+      <h2 class="sec-title" style="font-size:1.7rem">Attivare la licenza</h2>
+      <ol class="lead">
+        <li>Dopo l'acquisto ricevi una chiave via e-mail.</li>
+        <li>Nel programma: <b>? → Attiva licenza…</b> e incolla la chiave.</li>
+        <li>Cambi computer? <b>? → Disattiva su questo dispositivo…</b> e riattivala sull'altro.</li>
+      </ol>
+      <p class="price-note" style="margin-top:22px">Non hai trovato quello che cercavi?
+         <a href="mailto:lenzialex00@gmail.com">Scrivimi</a>: le domande che ricevo più spesso finiscono in questa pagina.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="col" style="max-width:280px">
+        <a class="brand" href="index.html"><img src="assets/icon.svg" alt=""> Pennino</a>
+        <p class="price-note" style="margin-top:12px">Editor PDF locale per Windows e Linux. Fatto in Italia.</p>
+      </div>
+      <div class="col"><h4>Prodotto</h4><nav>
+        <a href="funzioni.html">Funzioni</a><a href="come-si-fa.html">Come si fa</a><a href="scarica.html">Scarica</a><a href="prezzi.html">Prezzo e prova</a>
+        <a href="note-di-rilascio.html">Note di rilascio</a></nav></div>
+      <div class="col"><h4>Assistenza</h4><nav>
+        <a href="mailto:lenzialex00@gmail.com">Contatti</a>
+        <a href="prezzi.html#faq">Domande frequenti</a>
+        <a href="requisiti.html">Requisiti di sistema</a></nav></div>
+      <div class="col"><h4>Legale</h4><nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="termini.html">Termini e recesso</a>
+        <a href="termini.html#licenza">Licenza d'uso</a></nav></div>
+    </div>
+    <div class="legal"><span>© 2026 Pennino</span><span>Tutto locale · Nessun tracciamento</span></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
