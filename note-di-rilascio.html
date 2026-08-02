@@ -53,90 +53,25 @@
     <div class="wrap">
 
       <div class="release">
-        <div class="ver"><span class="tag">1.1.0</span><div class="date">30 luglio 2026</div><span class="badge">Nuovo nome</span></div>
+        <div class="ver"><span class="tag">1.0.0</span><div class="date">2 agosto 2026</div><span class="badge">Prima versione</span></div>
         <div>
-          <h3>Il programma ora si chiama Pennino</h3>
+          <h3>Pennino, prima versione pubblica</h3>
           <ul>
-            <li>Il nome precedente, <i>PDF Studio</i>, è già di un editor PDF
-                americano in commercio da anni. Abbiamo preferito cambiarlo adesso,
-                di nostra iniziativa, invece di trovarci un giorno costretti a
-                farlo: il programma, le funzioni e il prezzo sono esattamente gli
-                stessi.</li>
-            <li>Icona nuova, un pennino, al posto della vecchia.</li>
-            <li>Cambiano i nomi dei file: l'installer è
-                <code>Pennino-Setup-1.1.0.exe</code> e i progetti salvati usano
-                l'estensione <code>.pennino</code>.</li>
-            <li><b>Se avevi installato la versione precedente</b>: disinstallala dal
-                Pannello di controllo prima di installare questa, altrimenti restano
-                due programmi separati. I tuoi PDF non vengono toccati in alcun
-                modo. Gli eventuali progetti <code>.pstudio</code> della versione
-                vecchia, invece, questa versione non li apre: riesporta da lì il PDF
-                che ti serve prima di disinstallare.</li>
+            <li><b>Modifica il testo</b> gi&agrave; presente nel PDF, direttamente sulla pagina,
+                conservando carattere, corpo e allineamento dell'originale.</li>
+            <li><b>Organizza le pagine</b>: unisci, dividi, riordina trascinando, ruota, estrai;
+                numeri di pagina, filigrana, numerazione Bates, intestazioni e pi&egrave; di pagina.</li>
+            <li><b>Compila i moduli</b> AcroForm, le caselle a griglia (codice fiscale, IBAN),
+                le spunte; evidenziatore, penna e caselle di testo.</li>
+            <li><b>Firma digitale PAdES</b> con valore legale (kit firma, SPID, CNS) e verifica
+                della firma; oppure firma grafica disegnata o scritta a tastiera.</li>
+            <li><b>OCR</b> per rendere cercabile il testo delle scansioni, in italiano e inglese.</li>
+            <li><b>Confronto</b> fra due documenti con le differenze evidenziate.</li>
+            <li><b>Proteggi</b> con password AES-256, comprimi, esporta le pagine come immagini, stampa.</li>
+            <li>Progetto <code>.pennino</code> rieditabile all'infinito: il PDF originale non viene mai toccato.</li>
+            <li>Aggiornamenti automatici in background su Windows.</li>
           </ul>
-        </div>
-      </div>
-
-      <div class="release">
-        <div class="ver"><span class="tag">1.0.2</span><div class="date">28 luglio 2026</div><span class="badge">Aspetto</span></div>
-        <div>
-          <h3>Su Linux l'interfaccia è identica a quella di Windows</h3>
-          <ul>
-            <li>Il tema chiedeva un font che <b>esiste solo su Windows</b>: su Linux il
-                programma ripiegava su un carattere più largo e menu, etichette e barra di
-                stato venivano tutti di dimensione diversa. Ora ogni sistema usa il suo
-                equivalente migliore, con le stesse proporzioni.</li>
-            <li>Tolte le sottolineature sempre visibili nelle voci di menu su Linux
-                (<i>F̲ile</i>, <i>M̲odifica</i>…): compaiono premendo Alt, come su Windows.
-                Le scorciatoie da tastiera funzionano esattamente come prima.</li>
-            <li>Stessa resa dei controlli su tutti i sistemi.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="release">
-        <div class="ver"><span class="tag">1.0.1</span><div class="date">26 luglio 2026</div><span class="badge">Correzioni</span></div>
-        <div>
-          <h3>Modifica del testo precisa al pixel, e tre correzioni che contano</h3>
-          <p class="price-note">Aggiornamento consigliato a tutti.</p>
-          <ul>
-            <li><b>Il campo di modifica ora è incollato al testo che clicchi.</b> Prima, a
-                zoom alto, poteva comparire qualche pixel più in basso, tagliare la cima
-                delle lettere dei titoli o — nelle colonne di importi allineate a destra —
-                finire fuori dalla finestra. Corretto e verificato con 165 click automatici
-                su un documento reale.</li>
-            <li><b>Spaziatura fedele:</b> nel campo di modifica le parole cadono dove
-                cadono nella pagina, anche su righe lunghe come un IBAN.</li>
-            <li><b>Righe miste conservate:</b> modificando il corpo di una riga che contiene
-                anche etichetta e importo in grassetto, quei pezzi mantengono il font
-                originale del documento invece di essere riscritti.</li>
-            <li><b>Firma digitale:</b> un documento a cui è stato aggiunto contenuto dopo la
-                firma ora viene segnalato come <i>modificato</i>. Prima, in quel caso, la
-                verifica poteva dire "intatta".</li>
-            <li><b>Licenza:</b> «Disattiva su questo dispositivo» ora libera davvero
-                l'attivazione, così puoi spostare la licenza su un altro PC.</li>
-            <li><b>Linux:</b> stampa e apertura del PDF esportato non danno più errore.</li>
-            <li>Le voci di menu che richiedono un documento aperto ora sono spente quando
-                non c'è: prima sembravano non funzionare.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="release">
-        <div class="ver"><span class="tag">1.0</span><div class="date">2026</div><span class="badge">Prima versione</span></div>
-        <div>
-          <h3>Primo rilascio pubblico</h3>
-          <p class="price-note">Un editor PDF completo, tutto in locale.</p>
-          <ul>
-            <li><b>Firma digitale PAdES</b> con identità PKCS#12 e verifica delle firme.</li>
-            <li><b>OCR</b> dei documenti scansionati (italiano e inglese), con testo cercabile.</li>
-            <li><b>Modifica del testo</b> esistente e compilazione dei <b>moduli AcroForm</b>.</li>
-            <li><b>Confronto tra due documenti</b> con differenze evidenziate.</li>
-            <li><b>Organizzazione pagine</b>: unisci, dividi, riordina, ruota, estrai.</li>
-            <li><b>Numeri di pagina, filigrana, Bates</b>, intestazioni e piè di pagina.</li>
-            <li><b>Protezione</b> con password AES-256 e <b>compressione</b> intelligente.</li>
-            <li>Esportazione delle pagine come immagini, stampa, progetto rieditabile .pennino.</li>
-            <li>Aggiornamenti automatici in background; versioni per Windows e Linux.</li>
-          </ul>
+          <p class="price-note">Tutto avviene sul tuo computer: nessun cloud, nessun account, nessun caricamento.</p>
         </div>
       </div>
 
@@ -145,11 +80,19 @@
         <div>
           <h3>Sulla nostra tabella di marcia</h3>
           <ul>
+            <li><b>Creare moduli AcroForm</b>: disegnare sulla pagina campi di testo,
+                caselle di spunta, menu a tendina e pulsanti. Oggi Pennino compila i
+                moduli gi&agrave; presenti in un PDF, ma non ne crea di nuovi.</li>
+            <li><b>Spostare gli oggetti esistenti</b> — immagini, loghi, righe di tabella —
+                trascinandoli con lo strumento Seleziona.</li>
+            <li><b>Modifica del testo a paragrafo intero</b>, con reimpaginazione automatica:
+                oggi la riscrittura lavora per riga e per blocco.</li>
+            <li><b>Annotazioni e commenti a margine</b>, con elenco navigabile.</li>
             <li><b>Versione Lite gratuita</b>: visualizza, annota, organizza e comprimi.</li>
-            <li>Annotazioni e commenti a margine.</li>
             <li>Tema chiaro dell'interfaccia e ulteriori lingue.</li>
-            <li>Modifica del testo per interi paragrafi con reimpaginazione automatica.</li>
           </ul>
+          <p class="price-note">Sono intenzioni, non promesse con una data: quando una di
+             queste funzioni arriva, la trovi qui sopra nelle note di versione.</p>
           <p class="price-note">Hai una richiesta? <a href="mailto:lenzialex00@gmail.com">Scrivici</a>: le funzioni più richieste hanno la precedenza.</p>
         </div>
       </div>
