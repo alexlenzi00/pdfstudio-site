@@ -15,7 +15,7 @@
 <meta property="og:description" content="Sistemi supportati, requisiti per OCR e firma digitale, connessioni usate e limiti dichiarati di Pennino.">
 <meta property="og:url" content="https://alexlenzi00.github.io/pennino-site/requisiti.html">
 </head>
-<body>
+<body data-en-title="System requirements — Pennino">
 
 <header class="nav">
   <div class="nav-in">
@@ -38,66 +38,65 @@
 </header>
 
 <main>
-  <section class="section" style="padding-top:24px;padding-bottom:0" data-untranslated><div class="wrap"><div class="note"><b>This page is still in Italian.</b> The English version is on its way — the <a href="index.html">home page</a> is already translated. If something is unclear, <a href="mailto:lenzialex00@gmail.com">write to me</a> and I’ll answer in English.</div></div></section>
   <section class="section" style="padding-top:56px">
     <div class="wrap legalpage">
-      <p class="eyebrow">Prima di scaricare</p>
-      <h1 class="sec-title" style="font-size:clamp(1.8rem,4.5vw,2.6rem)">Requisiti e cose da sapere</h1>
-      <p class="sec-sub">Tutto quello che serve per usare Pennino, senza sorprese dopo l'acquisto.</p>
+      <p class="eyebrow" data-en="Before you download">Prima di scaricare</p>
+      <h1 class="sec-title" style="font-size:clamp(1.8rem,4.5vw,2.6rem)" data-en="Requirements and things to know">Requisiti e cose da sapere</h1>
+      <p class="sec-sub" data-en="Everything you need in order to use Pennino, with no surprises after the purchase.">Tutto quello che serve per usare Pennino, senza sorprese dopo l'acquisto.</p>
 
-      <h2>Sistemi supportati</h2>
+      <h2 data-en="Supported systems">Sistemi supportati</h2>
       <ul>
-        <li><b>Windows 10 e 11</b> (64 bit) &mdash; versione principale, provata a ogni rilascio.</li>
-        <li><b>Linux</b> (distribuzioni recenti, glibc 2.31 o successiva).</li>
+        <li data-en="<b>Windows 10 and 11</b> (64-bit) — the main platform, tested at every release."><b>Windows 10 e 11</b> (64 bit) &mdash; versione principale, provata a ogni rilascio.</li>
+        <li data-en="<b>Linux</b> (recent distributions, glibc 2.31 or later)."><b>Linux</b> (distribuzioni recenti, glibc 2.31 o successiva).</li>
       </ul>
-      <p>Il programma &egrave; autonomo: non serve installare Python n&eacute; altre librerie.
+      <p data-en="The program is self-contained: there is no need to install Python or any other library. It takes about 300 MB on disk and runs with 4 GB of RAM.">Il programma &egrave; autonomo: non serve installare Python n&eacute; altre librerie.
          Occupa circa 300 MB su disco e funziona con 4 GB di RAM.</p>
 
-      <h3>Differenze su Linux</h3>
-      <p>Su Linux la stampa passa dal comando di sistema <code>lp</code> (CUPS): se non c'&egrave;,
+      <h3 data-en="Differences on Linux">Differenze su Linux</h3>
+      <p data-en="On Linux printing goes through the system <code>lp</code> command (CUPS): if it is not there, Pennino opens the PDF in the default viewer and you print from there.">Su Linux la stampa passa dal comando di sistema <code>lp</code> (CUPS): se non c'&egrave;,
          Pennino apre il PDF nel visualizzatore predefinito e stampi da l&igrave;.
          L'aggiornamento automatico su Linux <b>scarica</b> la nuova versione ma va sostituita
          a mano: te lo diciamo con un messaggio, non succede in silenzio.</p>
 
-      <h2 id="ocr">OCR: serve Tesseract</h2>
-      <p>Il riconoscimento del testo delle scansioni usa <b>Tesseract</b>, il motore OCR open
+      <h2 id="ocr" data-en="OCR: Tesseract is required">OCR: serve Tesseract</h2>
+      <p data-en="Text recognition for scans uses <b>Tesseract</b>, the most widely used open-source OCR engine. It is not bundled in the package: you install it once.">Il riconoscimento del testo delle scansioni usa <b>Tesseract</b>, il motore OCR open
          source pi&ugrave; diffuso. Non &egrave; incluso nel pacchetto (ha una licenza sua) ma
          &egrave; gratuito e si installa con un comando:</p>
       <ul>
         <li>Windows: <code>winget install UB-Mannheim.TesseractOCR</code></li>
         <li>Debian/Ubuntu: <code>sudo apt install tesseract-ocr tesseract-ocr-ita</code></li>
       </ul>
-      <p>Se manca, Pennino te lo dice e ti mostra il comando da eseguire: nessuna funzione si
+      <p data-en="If it is missing, Pennino tells you and shows the command to run: no feature breaks silently. The first time you use a new language its data (a few MB) is downloaded; from then on OCR works offline too.">Se manca, Pennino te lo dice e ti mostra il comando da eseguire: nessuna funzione si
          rompe in silenzio. La prima volta che usi una lingua nuova, i suoi dati (pochi MB)
          vengono scaricati; da quel momento l'OCR funziona anche offline.</p>
 
-      <h2>Firma digitale</h2>
-      <p>Per firmare serve la <b>tua</b> identit&agrave; digitale in formato PKCS#12
+      <h2 data-en="Digital signature">Firma digitale</h2>
+      <p data-en="To sign you need <b>your own</b> digital identity in PKCS#12 format (a .p12 or .pfx file): a signature kit, CNS, or company certificate. Pennino does not issue certificates.">Per firmare serve la <b>tua</b> identit&agrave; digitale in formato PKCS#12
          (file <code>.p12</code> o <code>.pfx</code>): kit firma, CNS, o certificato aziendale.
          Pennino non emette certificati e non ne vende. La verifica delle firme ricevute
          funziona sempre, anche senza un certificato tuo.</p>
 
-      <h2>Connessioni a internet</h2>
-      <p>I tuoi documenti non vengono mai inviati da nessuna parte. L'app si collega solo:</p>
+      <h2 data-en="Internet connections">Connessioni a internet</h2>
+      <p data-en="Your documents are never sent anywhere. The app only connects:">I tuoi documenti non vengono mai inviati da nessuna parte. L'app si collega solo:</p>
       <ul>
-        <li>al controllo aggiornamenti (si pu&ograve; ignorare);</li>
-        <li>all'attivazione della licenza, una volta;</li>
-        <li>al download dei dati lingua dell'OCR, solo se usi l'OCR.</li>
+        <li data-en="to check for updates (you can ignore it);">al controllo aggiornamenti (si pu&ograve; ignorare);</li>
+        <li data-en="to activate the licence, once;">all'attivazione della licenza, una volta;</li>
+        <li data-en="to download the OCR language data, only if you use OCR.">al download dei dati lingua dell'OCR, solo se usi l'OCR.</li>
       </ul>
 
-      <h2>Limiti attuali, dichiarati</h2>
+      <h2 data-en="Current limits, stated openly">Limiti attuali, dichiarati</h2>
       <ul>
-        <li>La modifica del testo lavora su riga e paragrafo: <b>non</b> ri-impagina un capitolo
+        <li data-en="Text editing works on lines and paragraphs: it does not reflow a whole chapter like a word processor.">La modifica del testo lavora su riga e paragrafo: <b>non</b> ri-impagina un capitolo
             intero come un word processor.</li>
-        <li>Il testo <b>ruotato</b> (verticale o in diagonale) non &egrave; modificabile.</li>
-        <li>I PDF con font non incorporati vengono riscritti con un font molto simile.</li>
+        <li data-en="<b>Rotated</b> text (vertical or diagonal) cannot be edited.">Il testo <b>ruotato</b> (verticale o in diagonale) non &egrave; modificabile.</li>
+        <li data-en="PDFs with non-embedded fonts are rewritten with a very similar typeface.">I PDF con font non incorporati vengono riscritti con un font molto simile.</li>
       </ul>
       <div class="note">Se una di queste cose &egrave; determinante per il tuo lavoro,
         <b>provalo prima</b>: la prova di 7 giorni ha tutte le funzioni.</div>
 
       <div class="cta-row" style="margin-top:34px">
-        <a class="btn btn-primary" href="scarica.html">Scarica la prova</a>
-        <a class="btn btn-ghost" href="mailto:lenzialex00@gmail.com">Chiedi prima di comprare</a>
+        <a class="btn btn-primary" href="scarica.html" data-en="Download the trial">Scarica la prova</a>
+        <a class="btn btn-ghost" href="mailto:lenzialex00@gmail.com" data-en="Ask before buying">Chiedi prima di comprare</a>
       </div>
     </div>
   </section>
