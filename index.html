@@ -47,15 +47,16 @@
   <div class="nav-in">
     <a class="brand" href="index.html"><img src="assets/icon.svg" alt=""> Pennino</a>
     <nav class="nav-links">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="funzioni.html">Funzioni</a>
-      <a href="come-si-fa.html">Come si fa</a>
-      <a href="scarica.html">Scarica</a>
-      <a href="prezzi.html">Prezzo</a>
-      <a href="note-di-rilascio.html">Novità</a>
+      <a href="index.html" aria-current="page" data-en="Home">Home</a>
+      <a href="funzioni.html" data-en="Features">Funzioni</a>
+      <a href="come-si-fa.html" data-en="How to">Come si fa</a>
+      <a href="scarica.html" data-en="Download">Scarica</a>
+      <a href="prezzi.html" data-en="Pricing">Prezzo</a>
+      <a href="note-di-rilascio.html" data-en="What’s new">Novità</a>
     </nav>
     <div class="nav-right">
-      <a class="btn btn-primary btn-sm cta-nav" href="prezzi.html">Acquista</a>
+      <a class="btn btn-primary btn-sm cta-nav" href="prezzi.html" data-en="Buy">Acquista</a>
+      <button class="icon-btn lang-btn" data-lang-toggle type="button">EN</button>
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Cambia tema" title="Cambia tema">◐</button>
       <button class="icon-btn nav-toggle" data-nav-toggle type="button" aria-label="Menu">☰</button>
     </div>
@@ -65,65 +66,65 @@
 <main>
   <section class="section hero">
     <div class="wrap">
-      <p class="eyebrow">Editor PDF · tutto in locale</p>
-      <h1>Il tuo PDF resta sul tuo computer. E paghi una volta sola.</h1>
-      <p class="lead">Firma digitale, OCR, moduli, confronto, compressione: tutte le funzioni
+      <p class="eyebrow" data-en="PDF editor · fully offline">Editor PDF · tutto in locale</p>
+      <h1 data-en="Your PDF stays on your computer. And you pay once.">Il tuo PDF resta sul tuo computer. E paghi una volta sola.</h1>
+      <p class="lead" data-en="Digital signatures, OCR, forms, comparison, compression: everything a professional editor does — with no subscription and no cloud.">Firma digitale, OCR, moduli, confronto, compressione: tutte le funzioni
          di un editor professionale — senza abbonamento e senza cloud.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="scarica.html">Scarica la prova gratuita</a>
-        <a class="btn btn-ghost" href="prezzi.html">Acquista — €49,90</a>
-        <span class="price-note">Prova 7 giorni · licenza <b>una tantum</b>, nessun abbonamento</span>
+        <a class="btn btn-primary" href="scarica.html" data-en="Download the free trial">Scarica la prova gratuita</a>
+        <a class="btn btn-ghost" href="prezzi.html" data-en="Buy — €49.90">Acquista — €49,90</a>
+        <span class="price-note" data-en="7-day trial · <b>one-off</b> licence, no subscription">Prova 7 giorni · licenza <b>una tantum</b>, nessun abbonamento</span>
       </div>
       <div class="trust">
-        <span><i class="tick" aria-hidden="true"></i> Nessun account</span>
-        <span><i class="tick" aria-hidden="true"></i> Nessun cloud</span>
-        <span><i class="tick" aria-hidden="true"></i> I documenti non lasciano il PC</span>
-        <span><i class="tick" aria-hidden="true"></i> Windows e Linux</span>
+        <span data-en="<i class=&quot;tick&quot; aria-hidden=&quot;true&quot;></i> No account"><i class="tick" aria-hidden="true"></i> Nessun account</span>
+        <span data-en="<i class=&quot;tick&quot; aria-hidden=&quot;true&quot;></i> No cloud"><i class="tick" aria-hidden="true"></i> Nessun cloud</span>
+        <span data-en="<i class=&quot;tick&quot; aria-hidden=&quot;true&quot;></i> Documents never leave your PC"><i class="tick" aria-hidden="true"></i> I documenti non lasciano il PC</span>
+        <span data-en="<i class=&quot;tick&quot; aria-hidden=&quot;true&quot;></i> Windows and Linux"><i class="tick" aria-hidden="true"></i> Windows e Linux</span>
       </div>
       <figure class="shot shot--hero">
         <img src="assets/img/vista-editor.png" width="1320" height="820"
              alt="La finestra di Pennino con un preventivo aperto: barra degli strumenti di compilazione e pagina del documento.">
-        <figcaption>La finestra di Pennino, così com'è. Nessun mockup: sono schermate del programma che scarichi.</figcaption>
+        <figcaption data-en="The Pennino window, exactly as it is. No mockups: these are screenshots of the program you download.">La finestra di Pennino, così com'è. Nessun mockup: sono schermate del programma che scarichi.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <p class="sec-label">Cosa fa</p>
-      <h2 class="sec-title">Un editor completo, non un visualizzatore.</h2>
+      <p class="sec-label" data-en="What it does">Cosa fa</p>
+      <h2 class="sec-title" data-en="A full editor, not a viewer.">Un editor completo, non un visualizzatore.</h2>
       <div class="grid">
-        <div class="card"><div class="ic ic--sign"></div><h3>Firma digitale (PAdES)</h3>
-          <p>Firma con valore legale con la tua identità (kit firma, SPID/CNS) e verifica le firme ricevute.</p></div>
-        <div class="card"><div class="ic ic--scan"></div><h3>OCR delle scansioni</h3>
-          <p>Rende cercabile il testo dei PDF scansionati, in italiano e inglese. Il documento resta identico. <a href="requisiti.html#ocr">Richiede Tesseract</a>, gratuito e installabile con un comando.</p></div>
-        <div class="card"><div class="ic ic--edit"></div><h3>Modifica testo e moduli</h3>
-          <p>Correggi il testo esistente, compila i moduli AcroForm, aggiungi caselle, spunte e firme.</p></div>
-        <div class="card"><div class="ic ic--compare"></div><h3>Confronto documenti</h3>
-          <p>Metti a confronto due PDF e vedi evidenziate le differenze, pagina per pagina.</p></div>
-        <div class="card"><div class="ic ic--layers"></div><h3>Organizza le pagine</h3>
-          <p>Unisci, dividi, riordina, ruota. Numeri di pagina, filigrana, Bates e intestazioni.</p></div>
-        <div class="card"><div class="ic ic--lock"></div><h3>Proteggi e comprimi</h3>
-          <p>Cifra con password AES-256, imposta i permessi, riduci il peso senza rovinare il testo.</p></div>
+        <div class="card"><div class="ic ic--sign"></div><h3 data-en="Digital signature (PAdES)">Firma digitale (PAdES)</h3>
+          <p data-en="Legally binding signatures with your own identity device (signature kit, SPID/CNS), plus verification of the signatures you receive.">Firma con valore legale con la tua identità (kit firma, SPID/CNS) e verifica le firme ricevute.</p></div>
+        <div class="card"><div class="ic ic--scan"></div><h3 data-en="OCR for scans">OCR delle scansioni</h3>
+          <p data-en="Makes the text of scanned PDFs searchable, in Italian and English. The document itself is untouched. <a href=&quot;requisiti.html#ocr&quot;>Requires Tesseract</a>, free and installable with one command.">Rende cercabile il testo dei PDF scansionati, in italiano e inglese. Il documento resta identico. <a href="requisiti.html#ocr">Richiede Tesseract</a>, gratuito e installabile con un comando.</p></div>
+        <div class="card"><div class="ic ic--edit"></div><h3 data-en="Text editing and forms">Modifica testo e moduli</h3>
+          <p data-en="Correct the existing text, fill in AcroForm fields, add boxes, ticks and signatures.">Correggi il testo esistente, compila i moduli AcroForm, aggiungi caselle, spunte e firme.</p></div>
+        <div class="card"><div class="ic ic--compare"></div><h3 data-en="Document comparison">Confronto documenti</h3>
+          <p data-en="Compare two PDFs and see the differences highlighted, page by page.">Metti a confronto due PDF e vedi evidenziate le differenze, pagina per pagina.</p></div>
+        <div class="card"><div class="ic ic--layers"></div><h3 data-en="Organise the pages">Organizza le pagine</h3>
+          <p data-en="Merge, split, reorder, rotate. Page numbers, watermarks, Bates numbering and headers.">Unisci, dividi, riordina, ruota. Numeri di pagina, filigrana, Bates e intestazioni.</p></div>
+        <div class="card"><div class="ic ic--lock"></div><h3 data-en="Protect and compress">Proteggi e comprimi</h3>
+          <p data-en="Encrypt with an AES-256 password, set permissions, shrink the file without ruining the text.">Cifra con password AES-256, imposta i permessi, riduci il peso senza rovinare il testo.</p></div>
       </div>
-      <p style="margin-top:26px"><a class="btn btn-ghost" href="funzioni.html">Tutte le funzioni in dettaglio →</a></p>
+      <p style="margin-top:26px"><a class="btn btn-ghost" href="funzioni.html" data-en="All features in detail →">Tutte le funzioni in dettaglio →</a></p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <p class="sec-label">Com'è lavorarci</p>
-      <h2 class="sec-title">Le pagine da una parte, il documento dall'altra.</h2>
+      <p class="sec-label" data-en="What it feels like">Com'è lavorarci</p>
+      <h2 class="sec-title" data-en="Pages on one side, the document on the other.">Le pagine da una parte, il documento dall'altra.</h2>
       <div class="shots">
         <figure class="shot">
           <img src="assets/img/organizza-pagine.png" width="1320" height="820" loading="lazy"
                alt="Vista Pagine: miniature del documento con i comandi ruota, elimina, estrai, dividi e unisci.">
-          <figcaption>Vista <b>Pagine</b>: trascina le miniature per riordinare, ruota, estrai, dividi, unisci.</figcaption>
+          <figcaption data-en="<b>Pages</b> view: drag the thumbnails to reorder, rotate, extract, split and merge.">Vista <b>Pagine</b>: trascina le miniature per riordinare, ruota, estrai, dividi, unisci.</figcaption>
         </figure>
         <figure class="shot">
           <img src="assets/img/zoom-dettaglio.png" width="1320" height="820" loading="lazy"
                alt="Vista Compila con il documento ingrandito e gli strumenti di modifica del testo.">
-          <figcaption>Vista <b>Compila</b>: modifica del testo, caselle, spunte, evidenziatore, firma.</figcaption>
+          <figcaption data-en="<b>Fill in</b> view: text editing, boxes, ticks, highlighter, signature.">Vista <b>Compila</b>: modifica del testo, caselle, spunte, evidenziatore, firma.</figcaption>
         </figure>
       </div>
     </div>
@@ -131,31 +132,31 @@
 
   <section class="section">
     <div class="wrap">
-      <p class="sec-label">Perché una tantum</p>
-      <h2 class="sec-title">Paghi una volta. Non ogni anno, per sempre.</h2>
+      <p class="sec-label" data-en="Why one-off">Perché una tantum</p>
+      <h2 class="sec-title" data-en="Pay once. Not every year, forever.">Paghi una volta. Non ogni anno, per sempre.</h2>
       <div class="table-scroll">
         <table>
           <thead><tr><th>&nbsp;</th><th class="col-us">Pennino</th><th>Adobe Acrobat</th><th>Foxit</th></tr></thead>
           <tbody>
-            <tr><td>Costo</td><td class="col-us num">€49,90 una volta</td><td class="num">~€290/anno</td><td class="num">~€130/anno</td></tr>
-            <tr><td>Abbonamento</td><td class="col-us"><span class="no">No</span></td><td>Sì</td><td>Sì</td></tr>
-            <tr><td>Funziona offline</td><td class="col-us"><span class="yes">Sì</span></td><td>Parziale</td><td>Parziale</td></tr>
-            <tr><td>Dati nel cloud</td><td class="col-us"><span class="yes">Mai</span></td><td>Sì</td><td>Sì</td></tr>
-            <tr><td>Firma PAdES</td><td class="col-us"><span class="yes">Sì</span></td><td>Sì</td><td>Sì</td></tr>
-            <tr><td>Interfaccia in italiano</td><td class="col-us"><span class="yes">Sì</span></td><td>Sì</td><td>Sì</td></tr>
+            <tr><td data-en="Price">Costo</td><td class="col-us num" data-en="€49.90 once">€49,90 una volta</td><td class="num" data-en="~€290/year">~€290/anno</td><td class="num" data-en="~€130/year">~€130/anno</td></tr>
+            <tr><td data-en="Subscription">Abbonamento</td><td class="col-us"><span class="no">No</span></td><td>Sì</td><td>Sì</td></tr>
+            <tr><td data-en="Works offline">Funziona offline</td><td class="col-us"><span class="yes">Sì</span></td><td>Parziale</td><td>Parziale</td></tr>
+            <tr><td data-en="Data in the cloud">Dati nel cloud</td><td class="col-us"><span class="yes">Mai</span></td><td>Sì</td><td>Sì</td></tr>
+            <tr><td data-en="PAdES signature">Firma PAdES</td><td class="col-us"><span class="yes">Sì</span></td><td>Sì</td><td>Sì</td></tr>
+            <tr><td data-en="Italian interface">Interfaccia in italiano</td><td class="col-us"><span class="yes">Sì</span></td><td>Sì</td><td>Sì</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="price-note" style="margin-top:14px">Prezzi dei concorrenti indicativi (2026). L'app si collega a internet solo per il controllo aggiornamenti e, se usi l'OCR, per scaricare una volta i dati della lingua: i tuoi documenti non vengono mai inviati da nessuna parte.</p>
+      <p class="price-note" style="margin-top:14px" data-en="Competitor prices are indicative (2026). The app connects to the internet only to check for updates and, if you use OCR, to download the language data once: your documents are never sent anywhere.">Prezzi dei concorrenti indicativi (2026). L'app si collega a internet solo per il controllo aggiornamenti e, se usi l'OCR, per scaricare una volta i dati della lingua: i tuoi documenti non vengono mai inviati da nessuna parte.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap" style="text-align:center">
-      <h2 class="sec-title" style="margin-inline:auto">Provalo davvero, poi decidi.</h2>
-      <p class="sec-sub" style="margin-inline:auto">7 giorni con tutte le funzioni. Gli export di prova hanno una filigrana; attivi la licenza e sparisce.</p>
+      <h2 class="sec-title" style="margin-inline:auto" data-en="Really try it, then decide.">Provalo davvero, poi decidi.</h2>
+      <p class="sec-sub" style="margin-inline:auto" data-en="7 days with every feature. Trial exports carry a watermark; activate the licence and it disappears.">7 giorni con tutte le funzioni. Gli export di prova hanno una filigrana; attivi la licenza e sparisce.</p>
       <div class="cta-row" style="justify-content:center">
-        <a class="btn btn-primary" href="scarica.html">Scarica la prova</a>
+        <a class="btn btn-primary" href="scarica.html" data-en="Download the trial">Scarica la prova</a>
         <a class="btn btn-ghost" href="prezzi.html">Vedi il prezzo</a>
       </div>
     </div>
@@ -167,21 +168,21 @@
     <div class="cols">
       <div class="col" style="max-width:280px">
         <a class="brand" href="index.html"><img src="assets/icon.svg" alt=""> Pennino</a>
-        <p class="price-note" style="margin-top:12px">Editor PDF locale per Windows e Linux. Fatto in Italia.</p>
+        <p class="price-note" style="margin-top:12px"><span data-en="Local PDF editor for Windows and Linux. Made in Italy.">Editor PDF locale per Windows e Linux. Fatto in Italia.</span></p>
       </div>
-      <div class="col"><h4>Prodotto</h4><nav>
-        <a href="funzioni.html">Funzioni</a><a href="come-si-fa.html">Come si fa</a><a href="scarica.html">Scarica</a><a href="prezzi.html">Prezzo e prova</a>
-        <a href="note-di-rilascio.html">Note di rilascio</a></nav></div>
-      <div class="col"><h4>Assistenza</h4><nav>
-        <a href="mailto:lenzialex00@gmail.com">Contatti</a>
-        <a href="prezzi.html#faq">Domande frequenti</a>
-        <a href="requisiti.html">Requisiti di sistema</a></nav></div>
-      <div class="col"><h4>Legale</h4><nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="termini.html">Termini e recesso</a>
-        <a href="termini.html#licenza">Licenza d'uso</a></nav></div>
+      <div class="col"><h4 data-en="Product">Prodotto</h4><nav>
+        <a href="funzioni.html" data-en="Features">Funzioni</a><a href="come-si-fa.html" data-en="How to">Come si fa</a><a href="scarica.html" data-en="Download">Scarica</a><a href="prezzi.html" data-en="Pricing and trial">Prezzo e prova</a>
+        <a href="note-di-rilascio.html" data-en="Release notes">Note di rilascio</a></nav></div>
+      <div class="col"><h4 data-en="Support">Assistenza</h4><nav>
+        <a href="mailto:lenzialex00@gmail.com" data-en="Contact">Contatti</a>
+        <a href="prezzi.html#faq" data-en="FAQ">Domande frequenti</a>
+        <a href="requisiti.html" data-en="System requirements">Requisiti di sistema</a></nav></div>
+      <div class="col"><h4 data-en="Legal">Legale</h4><nav>
+        <a href="privacy.html" data-en="Privacy">Privacy</a>
+        <a href="termini.html" data-en="Terms and refunds">Termini e recesso</a>
+        <a href="termini.html#licenza" data-en="License agreement">Licenza d'uso</a></nav></div>
     </div>
-    <div class="legal"><span>© 2026 Pennino</span><span>Tutto locale · Nessun tracciamento</span></div>
+    <div class="legal"><span>© 2026 Pennino</span><span data-en="All local · No tracking">Tutto locale · Nessun tracciamento</span></div>
   </div>
 </footer>
 <script src="assets/site.js"></script>

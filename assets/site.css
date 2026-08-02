@@ -258,3 +258,15 @@ footer.site .legal { margin-top: 34px; color: var(--ink-soft); font-size: .86rem
 .dl-steps code { background: var(--paper-3); border: 1px solid var(--line);
   border-radius: 6px; padding: 2px 6px; font-size: .86em;
   word-break: break-all; }
+
+/* --------------------------------------------------- selettore di lingua */
+/* Il pulsante mostra la lingua verso cui si passa (EN quando sei in
+   italiano). Il testo lo scrive site.js: qui c'e' solo la forma. */
+.lang-btn { font: 600 .78rem/1 var(--font, inherit); letter-spacing: .04em;
+  min-width: 34px; padding: 0 8px; }
+
+/* Avviso sulle pagine non ancora tradotte: invisibile in italiano,
+   compare solo quando si passa all'inglese. Meglio dirlo che lasciare
+   l'utente davanti a una pagina che non cambia. */
+[data-untranslated] { display: none; }
+html[data-lang="en"] [data-untranslated] { display: block; }
