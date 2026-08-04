@@ -40,6 +40,16 @@
       im.setAttribute('alt', im.getAttribute(l === 'en' ? 'data-en-alt'
                                                        : 'data-it-alt'));
     }
+    /* schermate: in inglese si mostra la versione con l'app in inglese */
+    var img = document.querySelectorAll('[data-en-src]');
+    for (var s = 0; s < img.length; s++) {
+      var im = img[s];
+      if (!im.hasAttribute('data-it-src')) {
+        im.setAttribute('data-it-src', im.getAttribute('src'));
+      }
+      im.setAttribute('src', im.getAttribute(l === 'en' ? 'data-en-src'
+                                                        : 'data-it-src'));
+    }
     var titolo = document.querySelector('[data-en-title]');
     if (titolo) {
       if (!titolo.hasAttribute('data-it-title')) {
