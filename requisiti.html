@@ -58,17 +58,23 @@
          L'aggiornamento automatico su Linux <b>scarica</b> la nuova versione ma va sostituita
          a mano: te lo diciamo con un messaggio, non succede in silenzio.</p>
 
-      <h2 id="ocr" data-en="OCR: Tesseract is required">OCR: serve Tesseract</h2>
-      <p data-en="Text recognition for scans uses <b>Tesseract</b>, the most widely used open-source OCR engine. It is not bundled in the package: you install it once.">Il riconoscimento del testo delle scansioni usa <b>Tesseract</b>, il motore OCR open
-         source pi&ugrave; diffuso. Non &egrave; incluso nel pacchetto (ha una licenza sua) ma
-         &egrave; gratuito e si installa con un comando:</p>
+      <h2 id="ocr" data-en="OCR: included on Windows">OCR: incluso su Windows</h2>
+      <p data-en="Text recognition for scans uses <b>Tesseract</b>, the most widely used open-source OCR engine. On <b>Windows it travels inside the package</b>, together with the Italian and English language data: OCR works straight away, with nothing to install and no connection needed."><b>Su Windows non devi installare nulla</b>: il riconoscimento del testo usa
+         <b>Tesseract</b>, il motore OCR open source pi&ugrave; diffuso, e viaggia
+         dentro il pacchetto insieme ai dati per italiano e inglese. L'OCR funziona
+         subito, anche senza connessione.</p>
+      <p data-en="On Linux the packages are the distribution's own, and Tesseract is installed with one command:">Su Linux i pacchetti sono quelli della distribuzione, e Tesseract si installa
+         con un comando:</p>
       <ul>
-        <li>Windows: <code>winget install UB-Mannheim.TesseractOCR</code></li>
         <li>Debian/Ubuntu: <code>sudo apt install tesseract-ocr tesseract-ocr-ita</code></li>
+        <li data-en="Windows: nothing to do — it is already inside. If you prefer your own installation (<code>winget install UB-Mannheim.TesseractOCR</code>), set <code>PENNINO_TESSERACT</code> to its path.">Windows: niente da fare, &egrave; gi&agrave; dentro. Se preferisci la
+            <em>tua</em> installazione (<code>winget install UB-Mannheim.TesseractOCR</code>),
+            indicala nella variabile <code>PENNINO_TESSERACT</code>.</li>
       </ul>
-      <p data-en="If it is missing, Pennino tells you and shows the command to run: no feature breaks silently. The first time you use a new language its data (a few MB) is downloaded; from then on OCR works offline too.">Se manca, Pennino te lo dice e ti mostra il comando da eseguire: nessuna funzione si
-         rompe in silenzio. La prima volta che usi una lingua nuova, i suoi dati (pochi MB)
-         vengono scaricati; da quel momento l'OCR funziona anche offline.</p>
+      <p data-en="If it is ever missing, Pennino tells you and shows the command to run: no feature breaks silently. For a language other than Italian or English, its data (a few MB) is downloaded the first time; from then on that language works offline too.">Se dovesse mancare, Pennino te lo dice e ti mostra il comando da eseguire: nessuna
+         funzione si rompe in silenzio. Per una lingua diversa da italiano e inglese, i
+         suoi dati (pochi MB) vengono scaricati la prima volta; da quel momento funziona
+         anche quella offline.</p>
 
       <h2 data-en="Digital signature">Firma digitale</h2>
       <p data-en="To sign you need <b>your own</b> digital identity in PKCS#12 format (a .p12 or .pfx file): a signature kit, CNS, or company certificate. Pennino does not issue certificates.">Per firmare serve la <b>tua</b> identit&agrave; digitale in formato PKCS#12
