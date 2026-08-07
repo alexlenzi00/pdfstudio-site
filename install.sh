@@ -8,26 +8,39 @@
 # corrente (menu applicazioni, icona, comando `pennino`, file .pennino
 # associati). NIENTE sudo: si installa sotto ~/.local.
 #
+# Su Debian/Ubuntu, se mancano le librerie di sistema che servono a Qt,
+# lo script se ne accorge e lo dice: quelle non puo' installarle da solo,
+# perche' sono pacchetti di sistema e questa installazione NON usa sudo.
+# In quel caso la strada piu' comoda e' il pacchetto .deb, che le tira
+# dentro da se':
+#   curl -fsSL .../install.sh | bash -s -- --deb     (chiede la password)
+#
 # Opzioni, quando lo si esegue come file invece che da pipe:
 #   ./install.sh --prefix DIR    installa altrove (default ~/.local)
 #   ./install.sh --version X.Y.Z una versione precisa
+#   ./install.sh --deb           installa il .deb con apt (serve sudo)
+#   ./install.sh --utente        forza l'installazione in ~/.local
 #   ./install.sh --keep          non cancella l'archivio scaricato
 #
 # Per disinstallare:  ~/.local/opt/pennino/uninstall.sh
 set -euo pipefail
 
 REPO="alexlenzi00/pennino-site"
+SITO="https://alexlenzi00.github.io/pennino-site"
 NOME="Pennino-linux.tar.gz"
 PREFIX="${HOME}/.local"
 VERSIONE=""
 KEEP=0
+MODO="auto"          # auto | utente | deb
 
 while [ $# -gt 0 ]; do
     case "$1" in
         --prefix)  PREFIX="$2"; shift 2 ;;
         --version) VERSIONE="$2"; shift 2 ;;
         --keep)    KEEP=1; shift ;;
-        --help|-h) sed -n '2,17p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+        --deb)     MODO="deb"; shift ;;
+        --utente)  MODO="utente"; shift ;;
+        --help|-h) sed -n '2,22p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
         *) echo "opzione sconosciuta: $1" >&2; exit 2 ;;
     esac
 done
@@ -77,6 +90,84 @@ fi
 TMP="$(mktemp -d)"
 # la cartella temporanea sparisce sempre, anche se qualcosa va storto
 trap '[ "$KEEP" = 1 ] || rm -rf "$TMP"' EXIT
+
+# --- 3-bis. le librerie di Qt: chi le installa? ----------------------------
+# Qt le carica con dlopen, quindi non compaiono in `ldd` e la loro assenza
+# si manifesta solo all'avvio, con un "ImportError: libGL.so.1" che non
+# aiuta nessuno. Il .deb le dichiara e apt le risolve; l'installazione
+# per-utente non puo' (sono pacchetti di sistema e qui non si usa sudo).
+mancanti=""
+for lib in libGL.so.1 libEGL.so.1 libxkbcommon-x11.so.0 libfontconfig.so.1; do
+    ldconfig -p 2>/dev/null | grep -q "$lib" || mancanti="${mancanti} ${lib}"
+done
+
+if [ "$MODO" = auto ] && [ -n "$mancanti" ] && command -v apt-get >/dev/null 2>&1; then
+    info ""
+    info "Mancano alcune librerie di sistema che servono a Qt:${mancanti}"
+    info "Su Debian/Ubuntu le installa da se' il pacchetto .deb."
+    # Da `curl | bash` lo stdin e' la pipe, non la tastiera: per chiedere
+    # davvero all'utente serve il terminale, /dev/tty. Se non c'e'
+    # (script non interattivo, CI) non si indovina: si spiega e si va
+    # avanti con l'installazione per-utente.
+    # ⚠️ `[ -e /dev/tty ]` non basta: il file esiste anche dove non si puo'
+    # aprire (container senza tty, cron), e la lettura fallisce con un
+    # errore brutto dopo aver gia' stampato la domanda. Si prova ad
+    # aprirlo davvero, in silenzio.
+    if (: < /dev/tty) 2>/dev/null && command -v sudo >/dev/null 2>&1; then
+        printf 'Installo il .deb con apt (serve la tua password)? [S/n] '
+        risposta=""
+        read -r risposta < /dev/tty || risposta="n"
+        case "$risposta" in
+            ""|s|S|y|Y) MODO="deb" ;;
+            *) MODO="utente" ;;
+        esac
+    else
+        info "Per farlo:  curl -fsSL ${SITO}/install.sh | bash -s -- --deb"
+        MODO="utente"
+    fi
+fi
+
+# --- 3-ter. la strada .deb: apt risolve tutto -------------------------------
+if [ "$MODO" = deb ]; then
+    command -v apt-get >/dev/null 2>&1 || {
+        rosso "--deb funziona solo su Debian/Ubuntu (qui non c'e' apt)."
+        exit 1; }
+    command -v sudo >/dev/null 2>&1 || {
+        rosso "--deb richiede sudo per installare i pacchetti di sistema."
+        exit 1; }
+    if [ -n "$VERSIONE" ]; then
+        DEB="pennino_${VERSIONE}_amd64.deb"
+    else
+        # il nome contiene la versione: si legge dall'elenco delle impronte
+        LEGGI "${BASE}/SHA256SUMS.txt" > "${TMP}/SHA256SUMS.txt" 2>/dev/null || true
+        DEB="$(awk '{f=$2; sub(/^\*/,"",f); sub(/\r$/,"",f)
+                     if (f ~ /^pennino_.*\.deb$/) {print f; exit}}' \
+               "${TMP}/SHA256SUMS.txt" 2>/dev/null)"
+    fi
+    [ -n "${DEB:-}" ] || { rosso "non trovo il nome del pacchetto .deb"; exit 1; }
+
+    info "Scarico ${DEB}…"
+    SCARICA "${BASE}/${DEB}" "${TMP}/${DEB}" || {
+        rosso "download fallito: ${BASE}/${DEB}"; exit 1; }
+
+    ATTESA="$(awk -v n="$DEB" '{f=$2; sub(/^\*/,"",f); sub(/\r$/,"",f)
+                                if (f==n) {print $1; exit}}' \
+              "${TMP}/SHA256SUMS.txt" 2>/dev/null)"
+    if [ -n "${ATTESA:-}" ]; then
+        VERA="$(sha256sum "${TMP}/${DEB}" | awk '{print $1}')"
+        [ "$ATTESA" = "$VERA" ] || {
+            rosso "IMPRONTA SBAGLIATA sul .deb: installazione interrotta."
+            exit 1; }
+        info "Impronta SHA-256 verificata."
+    fi
+
+    info "Installo con apt (le dipendenze le risolve lui)…"
+    sudo apt-get install -y "${TMP}/${DEB}"
+    verde ""
+    verde "Pennino installato. Avvialo dal menu applicazioni o con: pennino"
+    verde "Per toglierlo:  sudo apt remove pennino"
+    exit 0
+fi
 
 info "Scarico Pennino…"
 SCARICA "${BASE}/${NOME}" "${TMP}/${NOME}" || {

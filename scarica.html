@@ -87,6 +87,10 @@
           <p class="price-note" data-en="No sudo: everything goes under <code>~/.local</code>. To remove it: <code>~/.local/opt/pennino/uninstall.sh</code>. Prefer to read it first? <a href=&quot;install.sh&quot;>Here is the script</a> — it is short and commented.">Niente sudo: va tutto sotto <code>~/.local</code>. Per toglierlo:
              <code>~/.local/opt/pennino/uninstall.sh</code>. Preferisci leggerlo prima?
              <a href="install.sh">Ecco lo script</a>, &egrave; corto e commentato.</p>
+          <p class="price-note" data-en="On a bare system some Qt system libraries may be missing: the script says which, and on Debian/Ubuntu it offers to install the <code>.deb</code> instead, which pulls them in by itself. To go straight there: <code>curl -fsSL https://alexlenzi00.github.io/pennino-site/install.sh | bash -s -- --deb</code>">Su un sistema spoglio possono mancare alcune librerie di sistema di Qt:
+             lo script te lo dice, e su Debian/Ubuntu ti propone di installare il
+             <code>.deb</code>, che se le tira dietro da solo. Per andarci diritto:<br>
+             <code style="display:block;padding:10px;margin-top:6px;overflow-x:auto;user-select:all">curl -fsSL https://alexlenzi00.github.io/pennino-site/install.sh | bash -s -- --deb</code></p>
           <p class="price-note" data-en="<b>Prefer your package manager?</b> The <code>.deb</code> for Debian/Ubuntu: <code>sudo apt install ./pennino_1.0.1_amd64.deb</code> — apt pulls in the required system libraries, and <code>sudo apt remove pennino</code> takes it away."><b>Preferisci il gestore di pacchetti?</b>
              <a href="https://github.com/alexlenzi00/pennino-site/releases/latest/download/pennino_1.0.1_amd64.deb">Il <code>.deb</code> per Debian/Ubuntu</a>:
              <code>sudo apt install ./pennino_1.0.1_amd64.deb</code> &mdash; apt
